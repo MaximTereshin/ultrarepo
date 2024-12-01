@@ -1,0 +1,16 @@
+FROM golang:1.21-alpine
+
+# Установка migrate
+RUN go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@v4.17.0
+ENV PATH="/go/bin:${PATH}"
+
+# Копирование миграций
+WORKDIR /migrations
+COPY migrations/*.sql ./
+
+# Скрипт для выполнения миграций
+COPY scripts/run-migrations.sh /run-migrations.sh
+RUN chmod +x /run-migrations.sh
+
+# Запуск миграций
+ENTRYPOINT ["/run-migrations.sh"] 

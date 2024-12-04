@@ -16,4 +16,6 @@ DROP INDEX IF EXISTS idx_game_sessions_status;
 DROP TABLE IF EXISTS game_sessions;
 DROP TABLE IF EXISTS games;
 DROP TABLE IF EXISTS transactions;
-DROP TABLE IF EXISTS wallets; 
+DROP TABLE IF EXISTS wallets;
+
+//бабабебе

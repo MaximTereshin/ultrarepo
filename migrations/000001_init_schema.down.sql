@@ -17,3 +17,5 @@ DROP TABLE IF EXISTS game_sessions;
 DROP TABLE IF EXISTS games;
 DROP TABLE IF EXISTS transactions;
 DROP TABLE IF EXISTS wallets; 
+
+//вау, я сделал пакость

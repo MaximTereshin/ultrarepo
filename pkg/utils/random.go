@@ -23,3 +23,5 @@ func (r *cryptoRandom) GenerateNumber(min, max int64) (int64, error) {
 	}
 	return n.Int64() + min, nil
 }
+
+//ПЕПЕПУПУНАНА

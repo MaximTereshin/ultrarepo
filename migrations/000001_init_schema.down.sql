@@ -11,7 +11,7 @@ DROP INDEX IF EXISTS idx_transactions_status;
 DROP INDEX IF EXISTS idx_game_sessions_user_id;
 DROP INDEX IF EXISTS idx_game_sessions_game_id;
 DROP INDEX IF EXISTS idx_game_sessions_status;
-
+//fsdfasdfs
 -- Удаление таблиц
 DROP TABLE IF EXISTS game_sessions;
 DROP TABLE IF EXISTS games;
